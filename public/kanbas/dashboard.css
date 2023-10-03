@@ -1,0 +1,112 @@
+.dark-sidebar {
+    background-color: #000000;
+    color: #fff;
+    height: 150vh;
+}
+
+.dark-sidebar a {
+    color: #aaa;
+    display: block;
+    padding: 1rem 1rem 1rem 0.5rem;
+    text-decoration: none;
+}
+
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+.dark-sidebar a:hover,
+.dark-sidebar a:focus  {
+    color: red;
+    background-color: #fff;
+}
+
+.dark-sidebar table {
+    height: 100%;
+}
+
+.dark-sidebar tr {
+    height: 11%;
+}
+.course-container {
+    padding-left: calc(15px + [width of the Kanbas Navigation sidebar]);
+    padding-left: 15px;
+  }
+  
+  .course-wrapper {
+    padding: 35px 15px; 
+    box-sizing: border-box;
+    max-width: 270px;
+    min-width: 250px; 
+  }
+  
+  .course-wrapper {
+    width: 260px;
+    margin-bottom: 35px;
+  }
+  
+  .card {
+    width: 260px; 
+    margin: 35px 15px; 
+    border: 1px solid #ddd; 
+  }
+  
+  .card-title a {
+    color: #333;
+    text-decoration: none; 
+  }
+  
+  .card-title a:hover {
+    text-decoration: underline; 
+  }
+  
+  
+  .dark-sidebar svg {
+    fill: red;
+  }
+  .dark-sidebar .link-cell a {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+  
+  .dark-sidebar .link-cell a.active-link {
+    color: red;
+    background-color: #fff;
+  }
+  
+  .bi {
+    fill: currentColor;
+  }
+  .bi-person-circle {
+    fill: black;
+  }
+  
+  .active-link:focus .bi-person-circle,
+  .active-link:active .bi-person-circle,
+  .active-link:hover .bi-person-circle {
+    fill: red;
+  }
+  
+  .link-class {
+    color: inherit;
+  }
+  
+  .link-class:focus,
+  .link-class:active,
+  .link-class:hover {
+    color: black;
+    border: 2px solid black;
+  }
+  
+  .arrow {
+    padding: 0 10px;
+  }
+  
+  
