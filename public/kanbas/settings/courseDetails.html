@@ -30,20 +30,7 @@
                   class="d-block w-100 h-100 d-flex flex-column align-items-center active-link"
                   style="background-color: #fff; color: red"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="red"
-                    class="bi bi-person-circle"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path
-                      fill-rule="evenodd"
-                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                    />
-                  </svg>
+                <i class = "fas fa-user" style="color: red;"></i>
                   <span>Account</span>
                 </a>
               </td>
@@ -338,7 +325,7 @@
               <a href="#" class="header-button">Feature Options</a>
               <a href="#" class="header-button">Integrations</a>
               <h3>Course Details</h3>
-              Image: <input type="file" /><br /><br />
+              Image: <input type="file" type="button" class="btn btn-light"/><br /><br />
               Name: CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]<br /><br />
               Course Code: CS4550.12631.202410<br /><br />
               Blueprint Course: No <br /><br />
@@ -353,18 +340,16 @@
                 >Enable Course as a Course Template</label
               >
               <br /><br />
-              <br />
               Time Zone:
-              <select id="select-one-timezone">
-                <option value="est">
-                  Eastern Time (US&Canada)(-05:00/-04:00)
-                </option></select
-              ><br /><br />
-              SIS ID:CS4550.12631.202410<br /><br />
+             <select class="form-select" id="select-one-timezone">
+                <option selected>Eastern Time (US&Canada)(-05:00/-04:00)</option>
+                <option value="est">Eastern Time (US&Canada)(-05:00/-04:00)</option>
+             </select>
+              SIS ID: &nbsp&nbsp&nbsp CS4550.12631.202410<br /><br />
               Subaccount: <a href="#">CS Undergrad</a><br /><br />
               Term: 202410_Fall 2023 Semester Full Term<br /><br />
               Participation:
-              <select id="select-one-participation">
+              <select id="select-one-participation" class="form-select" >
                 <option value="term">Term</option></select
               ><br /><br />
               Course Participation is limited to term start and end dates.
@@ -407,7 +392,7 @@
               <br /><br />
 
               Default due time:
-              <select id="select-one-time">
+              <select id="select-one-time" class="form-select"  >
                 <option value="default">
                   Account default (11:59pm)
                 </option></select
@@ -416,7 +401,7 @@
               not change the time due for any exisiting assignments.<br /><br />
 
               Languages:
-              <select id="select-one-language">
+              <select id="select-one-language" class="form-select" >
                 <option value="notSet">
                   Not set (user-configurable, defaults to English (United
                   States))
@@ -448,7 +433,7 @@
               >
               <br /><br />
               License:
-              <select id="select-one-license">
+              <select id="select-one-license" class="form-select" >
                 <option value="private">Private (Copyrighted)</option></select
               ><br /><br />
               File Copyright:
@@ -464,7 +449,7 @@
               ><br /><br />
               Visibility: If you need to make your course public please contact
               your administrator/support.
-              <select id="select-one-visibility">
+              <select id="select-one-visibility" class="form-select">
                 <option value="course">Course</option></select
               ><br /><br />
               <input
@@ -477,7 +462,7 @@
                 >Include this course in the public course index</label
               ><br /><br />
               Format:
-              <select id="select-one-format">
+              <select id="select-one-format" class="form-select">
                 <option value="format">On-Campus</option></select
               ><br /><br />
               Mastery Paths:<input
@@ -494,7 +479,7 @@
               <a href="#">More Options</a><br /><br />
 
               <a href="#"
-                ><button type="button">Update Course Details</button></a
+                ><button type="button" type="button" class="btn btn-danger">Update Course Details</button></a
               >
             </div>
           </div>
