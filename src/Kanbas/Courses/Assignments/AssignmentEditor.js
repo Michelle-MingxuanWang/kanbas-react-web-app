@@ -14,7 +14,7 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
-    <div className="assignment_container" style={{ marginTop: '80px' }}>
+    <div className="assignment_container" style={{ marginTop: '160px' }}>
       <h2>Assignment Name</h2>
       <input value={assignment.title}
              className="form-control" />

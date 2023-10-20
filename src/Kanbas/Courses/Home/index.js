@@ -4,12 +4,13 @@ import Status from "../Modules/Status";
 
 function Home() {
   return (
-    <div className="row">
+    <div className="row" style={{ marginTop: '80px' }}>
       <div className="col-9">
+      <h2>Home</h2>
         <Button />
         <ModuleList />
       </div>
-      <div className="col-3"> {/* Adjust the column width as needed */}
+      <div className="col-3" style={{ marginTop: '60px' }}>
         <Status />
       </div>
     </div>

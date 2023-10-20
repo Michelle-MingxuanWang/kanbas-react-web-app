@@ -11,7 +11,7 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <div className="assignment_container">
+    <div className="assignment_container" style={{ marginTop: '80px' }}>
       <Button />
       <h4>Assignments</h4>
       <div className="list-group">
