@@ -1,0 +1,25 @@
+.menu{
+    width: 25px;
+    height: 3px;
+    background: red;
+    margin: 50px auto;
+    position: relative;
+}
+.menu::before{
+    position: absolute;
+    top: -8px;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: red;
+    left: 0px;
+}
+.menu::after{
+    position: absolute;
+    bottom: -8px;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: red;
+    left: 0px;
+}
