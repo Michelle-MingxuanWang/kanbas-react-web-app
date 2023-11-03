@@ -7,45 +7,12 @@ import {
   updateModule,
   setModule,
 } from "./modulesReducer";
-import db from "../../Database";
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
-  //const modules = db.modules;
-  
-  /*const [modules, setModules] = useState(db.modules);
-  const [module, setModule] = useState({
-    name: "New Module",
-    description: "New Description",
-    course: courseId,
-  });*/
-  /*const addModule = (module) => {
-    setModules([
-      { ...module, _id: new Date().getTime().toString() },
-        ...modules,
-    ]);
-  };
-  const deleteModule = (moduleId) => {
-    setModules(modules.filter(
-      (module) => module._id !== moduleId));
-  };
-  const updateModule = () => {
-    setModules(
-      modules.map((m) => {
-        if (m._id === module._id) {
-          return module;
-        } else {
-          return m;
-        }
-      })
-    );
-  } */
-
-
-
 
   return (
     <ul className="list-group">
