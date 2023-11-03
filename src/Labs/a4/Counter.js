@@ -14,7 +14,7 @@ function Counter() {
   return (
     <div>
       <h2>Counter: {count}</h2>
-      <button
+      <button className = "btn btn-success"
         onClick={() => {
           //   count++;
           increment();
@@ -23,7 +23,7 @@ function Counter() {
       >
         Up
       </button>
-      <button
+      <button className = "btn btn-danger"
         onClick={() => {
           //   count--;
           decrement();
