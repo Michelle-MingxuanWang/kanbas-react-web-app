@@ -1,3 +1,4 @@
+import Nav from "../Nav";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
@@ -8,6 +9,7 @@ function Labs() {
   return (
     <Provider store={store}>
       <div className="container">
+        <Nav/>
         <h1>Labs</h1>
         <Link to="a3">Assignment 3</Link>
         <Link to="a4">Assignment 4</Link>
