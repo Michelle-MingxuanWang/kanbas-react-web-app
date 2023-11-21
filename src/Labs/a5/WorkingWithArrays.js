@@ -88,6 +88,13 @@ function WorkingWithArrays() {
             </div>
         )}
 
+      <input value={todo.id} readOnly />
+      <input
+        onChange={(e) => setTodo({
+          ...todo, title: e.target.value })}
+        value={todo.title} type="text"
+      />
+
         <textarea
         onChange={(e) => setTodo({ ...todo,
           description: e.target.value })}
