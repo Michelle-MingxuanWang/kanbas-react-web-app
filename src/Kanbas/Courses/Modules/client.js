@@ -7,8 +7,8 @@ import axios from "axios";
 //const MODULES_URL = `${API_BASE}/modules`;
 //const COURSES_URL = `${API_BASE}/courses`;
 
-const COURSES_URL = "https://dashboard.heroku.com/apps/kanbas-node-server-app-michell/deploy/github/courses";
-const MODULES_URL = "https://dashboard.heroku.com/apps/kanbas-node-server-app-michell/deploy/github/modules";
+const COURSES_URL = "https://kanbas-node-server-app-michell-282c8bf87a7c.herokuapp.com/api/courses";
+const MODULES_URL = "https://kanbas-node-server-app-michell-282c8bf87a7c.herokuapp.com/api/modules";
 
 
 export const addModule = async (courseId, module) => {
