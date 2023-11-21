@@ -2,9 +2,14 @@ import axios from "axios";
 
 // const COURSES_URL = "http://localhost:4000/api/courses";
 // const MODULES_URL = "http://localhost:4000/api/modules";
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:4000/api';
-const MODULES_URL = `${API_BASE}/modules`;
-const COURSES_URL = `${API_BASE}/courses`;
+//const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:4000/api';
+
+//const MODULES_URL = `${API_BASE}/modules`;
+//const COURSES_URL = `${API_BASE}/courses`;
+
+const COURSES_URL = "https://dashboard.heroku.com/apps/kanbas-node-server-app-michell/deploy/github/courses";
+const MODULES_URL = "https://dashboard.heroku.com/apps/kanbas-node-server-app-michell/deploy/github/modules";
+
 
 export const addModule = async (courseId, module) => {
     const response = await axios.post(
