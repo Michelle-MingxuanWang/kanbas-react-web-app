@@ -1,9 +1,15 @@
 import axios from "axios";
 
-const COURSES_URL = "http://localhost:4000/api/courses";
-const MODULES_URL = "http://localhost:4000/api/modules";
+//const COURSES_URL = "http://localhost:4000/api/courses";
+//const MODULES_URL = "http://localhost:4000/api/modules";
 //const COURSES_URL = "https://kanbas-node-server-app-michell-282c8bf87a7c.herokuapp.com/api/courses";
 //const MODULES_URL = "https://kanbas-node-server-app-michell-282c8bf87a7c.herokuapp.com/api/modules";
+
+const COURSES_URL = "https://kanbas-node-server-app-a6-bbhz.onrender.com/api/courses";
+const MODULES_URL = "https://kanbas-node-server-app-a6-bbhz.onrender.com/api/modules";
+
+
+
 
 export const addModule = async (courseId, module) => {
     const response = await axios.post(
